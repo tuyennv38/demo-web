@@ -2,6 +2,8 @@
 
 ## 1. Tổng quan
 
+`prd:demo-web-app-0001`
+
 Xây dựng một ứng dụng web sử dụng **Next.js** (React) với giao diện **Dark Mode**. Ứng dụng gồm 2 trang chính: **Login** và **Dashboard**.
 
 ---
@@ -9,6 +11,9 @@ Xây dựng một ứng dụng web sử dụng **Next.js** (React) với giao di
 ## 2. Yêu cầu chức năng
 
 ### 2.1. Điều hướng (Routing)
+
+`feature:routing-0001`
+> Implements: `prd:demo-web-app-0001`
 
 | Đường dẫn      | Mô tả                                             |
 | --------------- | -------------------------------------------------- |
@@ -20,6 +25,9 @@ Xây dựng một ứng dụng web sử dụng **Next.js** (React) với giao di
 - Khi user đã login mà truy cập `/login` → redirect sang `/dashboard`.
 
 ### 2.2. Trang Login (`/login`)
+
+`feature:login-page-0002`
+> Implements: `prd:demo-web-app-0001`
 
 **Giao diện:**
 - Form đăng nhập nằm giữa trang, bao gồm:
@@ -41,6 +49,9 @@ Xây dựng một ứng dụng web sử dụng **Next.js** (React) với giao di
 
 ### 2.3. Trang Dashboard (`/dashboard`)
 
+`feature:dashboard-page-0003`
+> Implements: `prd:demo-web-app-0001`
+
 **Giao diện:**
 - Header hiển thị tiêu đề "Dashboard" và **nút Logout** (phía trên bên phải).
 - Nội dung chính: **Biểu đồ doanh thu 7 ngày gần nhất**.
@@ -57,6 +68,8 @@ Xây dựng một ứng dụng web sử dụng **Next.js** (React) với giao di
 ---
 
 ## 3. Yêu cầu phi chức năng
+
+`prd:non-functional-reqs-0002`
 
 | Hạng mục        | Yêu cầu                                                                          |
 | ---------------- | --------------------------------------------------------------------------------- |
@@ -90,9 +103,43 @@ flowchart TD
 
 ## 5. Công nghệ & Thư viện dự kiến
 
+`prd:tech-stack-0003`
+
 | Công nghệ         | Phiên bản / Chi tiết            |
 | ------------------ | ------------------------------- |
 | Next.js            | Latest (App Router)             |
 | React              | 18+                             |
 | Recharts           | Thư viện vẽ biểu đồ            |
 | CSS                | Vanilla CSS / CSS Modules       |
+
+---
+
+## 6. Tasks
+
+| ID | Implements | Mô tả |
+|----|------------|-------|
+| `task:setup-nextjs-project-0001` | `prd:tech-stack-0003` | Khởi tạo dự án Next.js, cài đặt dependencies |
+| `task:setup-dark-theme-0002` | `prd:non-functional-reqs-0002` | Thiết lập design system Dark Mode (CSS variables, typography) |
+| `task:implement-routing-0003` | `feature:routing-0001` | Xây dựng routing và redirect logic |
+| `task:build-login-page-0004` | `feature:login-page-0002` | Dựng trang Login với form, validation và xử lý login |
+| `task:build-dashboard-page-0005` | `feature:dashboard-page-0003` | Dựng trang Dashboard với header, logout và biểu đồ doanh thu |
+| `task:add-revenue-chart-0006` | `feature:dashboard-page-0003` | Tích hợp Recharts, tạo biểu đồ doanh thu 7 ngày với dữ liệu giả lập |
+
+---
+
+## Phụ lục: Bảng tổng hợp ID & Truy vết
+
+| ID | Loại | Implements | Mô tả ngắn |
+|----|------|------------|-------------|
+| [`prd:demo-web-app-0001`](#1-tổng-quan) | prd | — (gốc) | Yêu cầu tổng quan ứng dụng web |
+| [`prd:non-functional-reqs-0002`](#3-yêu-cầu-phi-chức-năng) | prd | — (gốc) | Yêu cầu phi chức năng |
+| [`prd:tech-stack-0003`](#5-công-nghệ--thư-viện-dự-kiến) | prd | — (gốc) | Công nghệ & thư viện |
+| [`feature:routing-0001`](#21-điều-hướng-routing) | feature | [`prd:demo-web-app-0001`](#1-tổng-quan) | Điều hướng và redirect |
+| [`feature:login-page-0002`](#22-trang-login-login) | feature | [`prd:demo-web-app-0001`](#1-tổng-quan) | Trang đăng nhập |
+| [`feature:dashboard-page-0003`](#23-trang-dashboard-dashboard) | feature | [`prd:demo-web-app-0001`](#1-tổng-quan) | Trang Dashboard |
+| [`task:setup-nextjs-project-0001`](#6-tasks) | task | [`prd:tech-stack-0003`](#5-công-nghệ--thư-viện-dự-kiến) | Khởi tạo dự án |
+| [`task:setup-dark-theme-0002`](#6-tasks) | task | [`prd:non-functional-reqs-0002`](#3-yêu-cầu-phi-chức-năng) | Thiết lập Dark Mode |
+| [`task:implement-routing-0003`](#6-tasks) | task | [`feature:routing-0001`](#21-điều-hướng-routing) | Xây dựng routing |
+| [`task:build-login-page-0004`](#6-tasks) | task | [`feature:login-page-0002`](#22-trang-login-login) | Dựng trang Login |
+| [`task:build-dashboard-page-0005`](#6-tasks) | task | [`feature:dashboard-page-0003`](#23-trang-dashboard-dashboard) | Dựng trang Dashboard |
+| [`task:add-revenue-chart-0006`](#6-tasks) | task | [`feature:dashboard-page-0003`](#23-trang-dashboard-dashboard) | Biểu đồ doanh thu |
