@@ -1,5 +1,5 @@
 /**
- * @implements task:build-login-page-0004
+ * @implements task:build-login-page-0002
  * @implements feature:login-page-0002
  * 
  * LoginForm component — email/password form with client-side validation

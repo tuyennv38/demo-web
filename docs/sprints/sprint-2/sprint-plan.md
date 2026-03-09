@@ -12,7 +12,7 @@ Hoàn thiện luồng xác thực (Login, Logout) và xây dựng giao diện Da
 | # | Task ID | Implements | Mô tả | Ước lượng | Status |
 |---|---------|------------|--------|-----------|--------|
 | 1 | `task:setup-routing-0001` | `feature:routing-0001` | Cấu hình React Router cho các trang (Login, Dashboard) và logic guard authentication | 3h | ⬜ To Do |
-| 2 | `task:build-login-page-0002` | `feature:login-page-0002` | UI Login form (dark mode), validation email/password, lưu token localStorage | 5h | ⬜ To Do |
+| 2 | `task:build-login-page-0002` | `feature:login-page-0002` | UI Login form (dark mode), validation email/password, lưu token localStorage | 5h | 🔄 In Progress |
 | 3 | `task:build-dashboard-page-0003` | `feature:dashboard-page-0003` | Header (Logout), UI Dashboard (dark mode), giả lập dữ liệu và vẽ biểu đồ doanh thu 7 ngày | 5h | ⬜ To Do |
 
 ## Definition of Done (DoD)
