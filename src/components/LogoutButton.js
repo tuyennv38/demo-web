@@ -1,5 +1,5 @@
 /**
- * @implements task:build-dashboard-page-0005
+ * @implements task:build-dashboard-page-0003
  * @implements feature:dashboard-page-0003
  * 
  * LogoutButton component — clears auth state and redirects to /login

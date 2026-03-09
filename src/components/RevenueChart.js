@@ -1,5 +1,5 @@
 /**
- * @implements task:add-revenue-chart-0006
+ * @implements task:build-dashboard-page-0003
  * @implements feature:dashboard-page-0003
  * 
  * RevenueChart component — 7-day revenue area chart with random mock data

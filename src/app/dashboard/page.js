@@ -1,5 +1,5 @@
 /**
- * @implements task:build-dashboard-page-0005
+ * @implements task:build-dashboard-page-0003
  * @implements feature:dashboard-page-0003
  * 
  * Dashboard Page — displays revenue chart and logout button, protected by auth guard
