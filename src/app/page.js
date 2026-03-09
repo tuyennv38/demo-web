@@ -1,5 +1,5 @@
 /**
- * @implements task:implement-routing-0003
+ * @implements task:setup-routing-0001
  * @implements feature:routing-0001
  * 
  * Root page — redirects to /login or /dashboard based on auth state
