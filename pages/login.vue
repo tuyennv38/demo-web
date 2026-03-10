@@ -56,6 +56,10 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
+definePageMeta({
+  layout: 'blank'
+})
+
 const router = useRouter()
 
 const email = ref('')
