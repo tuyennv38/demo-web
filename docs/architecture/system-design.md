@@ -7,21 +7,26 @@ Hệ thống là một Ứng dụng Single Page Application (SPA/SSR) sử dụn
 
 ## 2. Module/Component Design
 ### 2.1 Cấu trúc thư mục source code
-Tuân thủ cấu trúc chuẩn Nuxt.js 3:
+Tuân thủ cấu trúc chuẩn Nuxt.js 3 nhưng đưa source code vào `src/`:
 ```
 {project-root}/
-├── pages/
-│   ├── index.vue        (Trang gốc, redirect handler)
-│   ├── login.vue        (Trang đăng nhập)
-│   ├── dashboard.vue    (Trang dashboard với chart)
-│   └── users.vue        (Placeholder page)
-├── components/          (Các component UI dùng chung)
-├── middleware/
-│   └── auth.global.ts   (Global guard check localStorage)
-├── assets/
-│   └── css/
-│       └── main.css     (Vanilla CSS global styles)
-└── nuxt.config.ts
+├── src/
+│   ├── pages/
+│   │   ├── index.vue        (Trang gốc, redirect handler)
+│   │   ├── login.vue        (Trang đăng nhập)
+│   │   ├── users.vue        (Placeholder page)
+│   │   └── settings.vue     (Placeholder page)
+│   ├── components/          (Các component UI dùng chung)
+│   ├── layouts/             (Định dạng layout)
+│   ├── middleware/
+│   │   └── auth.global.ts   (Global guard check localStorage)
+│   ├── assets/
+│   │   └── css/
+│   │       └── main.css     (Vanilla CSS global styles)
+│   └── app.vue
+├── nuxt.config.ts
+├── package.json
+└── tsconfig.json
 ```
 
 ### 2.2 Interface/Contract

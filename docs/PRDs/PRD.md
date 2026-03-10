@@ -122,6 +122,7 @@ Các quy tắc validation khi bấm nút **Đăng nhập**:
 | Biểu đồ | **Chart.js** hoặc **vue-chartjs** | Line Chart cho doanh thu |
 | Xác thực | `localStorage` | Client-side only (prototype) |
 | Responsive | Mobile-first | Breakpoints: 768px / 1024px |
+| Kiến trúc (`feature:src-directory-0009`) | **Sub-folder source** | Gom toàn bộ source code vào thư mục `src/`, giữ config ở root. |
 
 **Ngôn ngữ giao diện:** Tiếng Việt.
 
