@@ -43,8 +43,9 @@
         </div>
         
         <div class="header-right">
-          <!-- Placeholder for User Info (Task 7) -->
-          <div id="user-info-placeholder"></div>
+          <ClientOnly>
+            <UserInfo />
+          </ClientOnly>
         </div>
       </header>
 
