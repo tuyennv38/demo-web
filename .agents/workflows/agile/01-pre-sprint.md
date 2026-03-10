@@ -116,6 +116,7 @@ Architect thực hiện các công việc sau:
   - **Backend:** Layered, Hexagonal, CQRS, Event-Driven, v.v.
 - Vẽ **System Context Diagram** — hệ thống tương tác với các actor/hệ thống bên ngoài nào?
 - Vẽ **Container Diagram** — các thành phần chính (Frontend, Backend, Database, 3rd-party services).
+- **Thiết lập `.gitignore`:** Xác định và tạo file `.gitignore` phù hợp với tech stack (loại bỏ `node_modules`, `build/`, `.env`, v.v.) để đảm bảo không push thừa các file không cần thiết lên repository.
 - ID: `research:arch-design-{XXXX}` → `Implements: prd:tech-stack-{XXXX}`
 
 ### 1.4.2: Thiết kế Module/Component (Component Design)
