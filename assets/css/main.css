@@ -1,0 +1,32 @@
+/* 
+  @implements task:setup-light-theme-0002
+  CSS Variables & Design System for Light Theme
+*/
+:root {
+  --primary-color: #4F46E5;
+  --primary-hover: #4338CA;
+  --bg-color: #F9FAFB;
+  --surface-color: #FFFFFF;
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  --border-color: #E5E7EB;
+  --error-color: #EF4444;
+  --success-color: #10B981;
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
